@@ -1,42 +1,99 @@
-body,
-h1,
-h2 {
-    color: black;
-    line-height: 20px;
+body {
+    background: #fafafa;
+    color: #000;
+
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 16px;
-    font-weight: bold;
-    font-family: italic;
+    margin: 0;
+    padding: 0;
+    /*
+        serif - с засечками
+        sans-serif - без засечек
+        monospace - моноширинный
+    */
 }
 
-/* index and catalog*/
-
-.main-header {
-    margin: auto;
-    margin-top: -10px;
-    padding: auto;
-    padding-top: 10px;
-    background-color: white;
-    border: 0px solid;
+.wrapper {
+    background: #fff;
+    margin: 0 auto;
+    /*max-width: 1200px;*/
+    /*min-width: 768px;*/
+    width: 1200px;
 }
 
-ul.navigation-list {
-    list-style: none;
-    margin-top: -10px;
-    vertical-align: middle;
+    .main-header {
+        height: 50px;
+    }
+        .nav {
+            font-size: 0;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+            .nav li {
+                font-size: 13px;
+                display: inline-block;
+                vertical-align: top;
+                text-align: center;
+                height: 50px;
+                line-height: 50px;
+                width: 20%;
+            }
+
+            .nav a {
+                color: #000;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+        .logo {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            /*
+            transform: translate(-50%, 0);
+            */
+            margin: 0 0 0 -55px;
+            height: 60px;
+            width: 110px;
+            z-index: 1;
+        }
+
+    .intro-background {
+        background: url(../img/index-img/bg.jpg) no-repeat 50% 50%;
+        overflow: hidden;
+        height: 600px;
+    }
+        .intro-title {
+            background: url(../img/index-img/Welcome.png) no-repeat 50% 50%;
+            font-size: 0;
+            margin: 60px auto 0;
+            height: 45px;
+            width: 188px;
+        }
+
+
+.reasons {
+    font-size: 0;
+}
+.reason {
+    background: red;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+    /*width: 33.33%;*/
+    width: 400px;
+}
+.reason-image {
+    display: inline-block;
+    vertical-align: top;
+    /*width: 66.67%;*/
+    width: 800px;
 }
 
-li {
-    display: inline;
-    padding: 10px 60px 10px 60px;
-    margin: -40px 30px 0px 30px;
-    border: 0px solid black;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
+/*
 footer {
     position: relative;
     top: -1349px;
@@ -50,7 +107,7 @@ footer {
 }
 
 .social-btn-twitter {
-    
+
 }
 
 .footer-copyright {
@@ -65,11 +122,9 @@ footer {
     left: 300px;
 }
 
-/* index */
-
 .background {
     text-align: center;
-    
+
 }
 
 h1 {
@@ -122,7 +177,7 @@ p.reasons-five {
     width: 300px;
     color: gray;
     padding: 40px;
-    background-image: url(); 
+    background-image: url();
     text-align: center;
 }
 
@@ -257,7 +312,6 @@ div.questionnaire {
     background-color: #99cccc;
 }
 
-/* catalog */
 
 .cost-day {
     position: absolute;
@@ -352,3 +406,4 @@ div.questionnaire {
 .btn-brown {
     background-color: #666666;
 }
+*/
