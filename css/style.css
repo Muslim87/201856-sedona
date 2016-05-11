@@ -77,9 +77,8 @@ body {
         
         .angles {
             background: url(../img/index-img/angles.png) no-repeat 50% 50%;
-            font-size: 0;
+            font-size: 10px;
             margin: 150px auto 0;
-            z-index: 1;
         }
 
 
@@ -88,67 +87,51 @@ body {
 }
 .reason {
     background: #fff;
-    font-size: 12px;
+    font-size: 14px;
     display: inline-block;
     vertical-align: top;
-    /*width: 33.33%;*/
-    width: 325px;
-    padding: 37px;
+    width: 33.33%;
+    padding: 49px;
     text-align: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
 }
 .reason-image {
     display: inline-block;
     vertical-align: top;
-    /*width: 66.67%;*/
-    width: 800px;
+    width: 66.67%;
 }
 
 .index-header {
     text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 40px 0;
 }
 
 .index-title {
-    font-size: 22px;
+    font-size: ;
 }
 
 .reason-town {
     color: #fff;
-    font-size: 16px;
-    background: #99cccc;
+    font-size: 14px;
+    background: #81b3d2;
 }
 
 .reason-apartment {
-    background: #fff;
-    font-size: 16px;
-    display: inline-block;
-    vertical-align: top;
-    /*width: 33.33%;*/
-    width: 280px;
-    padding: 59px;
-    color: ;
-    text-align: center;
+    font-size: ;
+    background: url(../img/index-img/housing.png) no-repeat 50% 20%;
 }
 
 .reason-food {
-    background: #fff;
-    font-size: 16px;
-    display: inline-block;
-    vertical-align: top;
-    /*width: 33.33%;*/
-    width: 280px;
-    padding: 59px;
-    text-align: center;
+    font-size: 13px;
+    background: url(../img/index-img/food.png) no-repeat 50% 20%;
 }
 
 .reason-souvenirs {
-    background: #fff;
-    font-size: 16px;
-    display: inline-block;
-    vertical-align: top;
-    /*width: 33.33%;*/
-    width: 280px;
-    padding: 59px;
-    text-align: center;
+    font-size: 13px;
+    background: url(../img/index-img/souvenir.png) no-repeat 50% 20%;
 }
 
 .image-apartment {
@@ -190,6 +173,7 @@ body {
 }
 
 .image-map {
+    
 }
 
 .questionnaire {
@@ -210,10 +194,6 @@ body {
     text-decoration: none;
 }
 
-.main-footer {
-    padding: 20px 0;
-    background: #ffffff;
-}
 
 
 
@@ -235,11 +215,8 @@ body {
 
 
 
-.catalog-intro-background {
-    background: url(../img/catalog-img/bg.jpg) no-repeat 50% 50%;
-    overflow: hidden;
-    height: 600px;
-}
+
+
 
 .link {
     color: #cccccc;
@@ -252,14 +229,10 @@ body {
 
 
 .hotel {
-    font-size: 16px;
+    font-size: 0px;
 }
 
-.hotel-card {
-    position: relative;
-    top: -115px;
-    left: 165px;
-}
+
 
 .btn {
     position: relative;
@@ -274,10 +247,7 @@ body {
     background: #666666;
 }
 
-.hotel-category {
-    position: relative;
-    top: -10px;
-}
+
 
 .hotel-cost {
     position: relative;
@@ -289,10 +259,117 @@ body {
     position: relative;
     top: -140px;
     left: 1000px;
-    width: 90px;
-    background: #cccccc;
 }
 
 .hotel-description {
     padding: 20px 60px;
+}
+
+.rating-value {
+    padding: 5px 20px;
+    width: 90px;
+    background: #cccccc;
+}
+
+.reason-area {
+    background: #eeeeee;
+}
+
+.reason-road {
+    background: #eeeeee;
+}
+
+.reason-tourists {
+    background: #eeeeee;
+}
+
+.selection {
+    background: url(../img/catalog-img/bg.jpg) no-repeat 50% 50%;
+    overflow: hidden;
+    height: 600px;
+}
+
+
+
+.reason-title {
+    padding-top: 70px;
+}
+
+.reason-bridge {
+    
+    color: #fff;
+    font-size: 14px;
+    background: #81b3d2;
+}
+
+.footer-social-list li {
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.footer-social-list {
+    float: left;
+    font-size: 0;
+    list-style: none;
+    margin-top: 25px;
+    margin-bottom: 36px;
+    margin-left: 230px;
+    padding: 0;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background: #81b3d2;
+}
+
+.footer-hashtag {
+    float: left;
+    margin: 50px 50px 55px 130px;
+    text-transform: uppercase;
+}
+
+.social-btn-twitter {
+    background: url(../img/twitter.svg) no-repeat 50% 60%;
+}
+
+.social-btn-fb {
+    background: url(../img/facebook.svg) no-repeat 50% 60%;
+}
+
+.social-btn-youtube {
+    background: url(../img/youtube.png) no-repeat 50% 60%;
+}
+
+.main-footer {
+    text-align: center;
+    height: 105px;
+    background: #fff;
+    opacity: ;
+    z-index: 1;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    margin-left: 150px;
+    text-transform: uppercase;
+}
+
+.htmlacademy {
+    margin-top: 40px;
+}
+
+.image-card {
+    float: left;
+    width: 100%;
+    min-height: 150px;
+}
+
+
+
+.hotel-card {
+    float: left;
 }
