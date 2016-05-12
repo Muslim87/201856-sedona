@@ -65,7 +65,7 @@ body {
     .intro-background {
         background: url(../img/index-img/bg.jpg) no-repeat 50% 50%;
         overflow: hidden;
-        height: 600px;
+        height: 467px;
     }
         .intro-title {
             background: url(../img/index-img/sedona.png) no-repeat 50% 50%;
@@ -91,7 +91,7 @@ body {
     display: inline-block;
     vertical-align: top;
     width: 33.33%;
-    padding: 49px;
+    padding: 49px 20px;
     text-align: center;
     box-sizing: border-box;
     text-transform: uppercase;
@@ -115,7 +115,7 @@ body {
 
 .reason-town {
     color: #fff;
-    font-size: 14px;
+    font-size: ;
     background: #81b3d2;
 }
 
@@ -154,13 +154,13 @@ body {
 
 .record {
     padding: 0px 120px 120px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     background: #fff;
 }
 
 .question {
-    font-size: 26px;
+    font-size: 30px;
 }
 
 .search-header {
@@ -229,14 +229,14 @@ body {
 
 
 .hotel {
-    font-size: 0px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 
 
 .btn {
-    position: relative;
-    top: -6px;
+    
     padding: 5px 15px;
     background: #99cccc;
     color: #fff;
@@ -244,30 +244,23 @@ body {
 }
 
 .btn-brown {
+    margin-right: 5px;
     background: #666666;
 }
 
 
 
 .hotel-cost {
-    position: relative;
-    top: -27px;
-    left: 120px;
+    
 }
 
-.hotel-rating {
-    position: relative;
-    top: -140px;
-    left: 1000px;
-}
 
-.hotel-description {
-    padding: 20px 60px;
-}
+
+
 
 .rating-value {
     padding: 5px 20px;
-    width: 90px;
+    width: 110px;
     background: #cccccc;
 }
 
@@ -286,7 +279,9 @@ body {
 .selection {
     background: url(../img/catalog-img/bg.jpg) no-repeat 50% 50%;
     overflow: hidden;
-    height: 600px;
+    height: 216px;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 
@@ -296,9 +291,8 @@ body {
 }
 
 .reason-bridge {
-    
     color: #fff;
-    font-size: 14px;
+    font-size: ;
     background: #81b3d2;
 }
 
@@ -362,14 +356,90 @@ body {
     margin-top: 40px;
 }
 
-.image-card {
+
+
+
+
+
+
+.infrastructure {
     float: left;
-    width: 100%;
-    min-height: 150px;
+    margin: 50px 0;
+    margin-left: 75px;
+}
+
+.housing {
+    float: left;
+    margin: 50px 0 0 115px;
+}
+
+.cost-day {
+    float: right;
+    margin: 50px 230px 0 0;
 }
 
 
 
+
+
 .hotel-card {
+    
+}
+
+
+
+.breadcrumbs {
+    margin-left: 75px;
+    text-transform: uppercase;
+}
+
+.sorting {
     float: left;
+    margin: 25px 50px 0 0;
+    font-weight: normal;
+}
+
+.sorting-link {
+    display: inline;
+    list-style: none;
+    font-size: 13px;
+}
+
+.found {
+    float: left;
+    margin-right: 50px;
+    font-size: 26px;
+}
+
+.image-card {
+    margin-left: 75px;
+}
+
+
+
+
+
+.hotel-rating {
+    float: right;
+    margin-top: -50px;
+    margin-right: 75px;
+}
+
+.hotel-description {
+    
+}
+
+.hotel-description-image {
+    float: left;
+    margin-right: 20px;
+}
+
+.hotel-category {
+    
+}
+
+.btn-transparent {
+    margin-top: 20px;
+    padding: 10px 34px;
+    border: 1px solid #fff;
 }

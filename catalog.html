@@ -28,20 +28,19 @@
                     <img src="img/logo.png" width="110" height="60" alt="Логотип">
                 </a>
             </header>
-
             <div class="intro">
         <div class="selection">
             <div class="infrastructure">
                 <label>Инфаструктура:</label><br>
-                <input type="checkbox" checked><br>
-                <input type="checkbox"><br>
-                <input type="checkbox">
+                <input type="checkbox" checked id="pool-field"><label for="pool-field">Бассейн</label><br>
+                <input type="checkbox" id="parking-field"><label for="parking-field">Парковка</label><br>
+                <input type="checkbox" id="internet-field"><label for="internet-field">wi fi</label>
             </div>
             <div class="housing">
                 <label>Тип жилья:</label><br>
-                <input type="checkbox" checked><br>
-                <input type="checkbox" checked><br>
-                <input type="checkbox" checked>
+                <input type="checkbox" checked id="hotel-field"><label for="hotel-field">Гостиница</label><br>
+                <input type="checkbox" checked id="motel-field"><label for="motel-field">Мотель</label><br>
+                <input type="checkbox" checked id="apartment-field"><label for="apartment-field">Апартаменты</label>
             </div>
             <div class="cost-day">
                 <label>Стоимость в сутки(Р):</label><br>
@@ -54,7 +53,7 @@
         <div class="breadcrumbs">
             <h2 class="found">Найдено: 3</h2>
             <b class="sorting">сортировка:</b>
-              <ul>
+              <ul class="sorting-link">
                  <li><a href="#" class="link price">по цене</a></li>
                  <li><a href="#" class="link a-type">по типу</a></li>
                  <li><a href="#" class="link rating">по рейтингу</a></li>
@@ -69,7 +68,7 @@
             <div class="hotel-description">
                <div class="image-card">
                 <div class="hotel-description-image">
-                    <img src="img/catalog-img/hotel.jpg" width="" height="" alt="Гостиница">
+                    <img src="img/catalog-img/hotel.jpg" width="135" height="90" alt="Гостиница">
                 </div>
                 <div class="hotel-card">
                         <h3 class="hotel-title">Amara resort & spa</h3>
@@ -92,8 +91,9 @@
             </div>
             <hr>
             <div class="hotel-description">
+               <div class="image-card">
                 <div class="hotel-description-image">   
-                        <img src="img/catalog-img/motel.jpg" width="" height="" alt="Мотель">
+                        <img src="img/catalog-img/motel.jpg" width="135" height="90" alt="Мотель">
                 </div>
                 <div class="hotel-card">
                         <h3 class="hotel-title">Desert Qualin Inn</h3>
@@ -101,6 +101,7 @@
                     <div class="hotel-cost">От 2000 р.</div>
                         <a href="#" class="btn">Подробнее</a>
                         <a href="#" class="btn btn-brown">Забронировать</a>
+                </div>
                 </div>
                 <div class="hotel-rating">
                     <div class="rating-stars">
@@ -112,8 +113,9 @@
             </div>
             <hr>
             <div class="hotel-description">
+               <div class="image-card">
                 <div class="hotel-description-image">
-                       <img src="img/catalog-img/apartments.jpg" width="" height="" alt="Апартаменты">
+                       <img src="img/catalog-img/apartments.jpg" width="135" height="90" alt="Апартаменты">
                 </div>
                 <div class="hotel-card">
                         <h3 class="hotel-title">Villas at poco diablo</h3>
@@ -121,6 +123,7 @@
                    <div class="hotel-cost">От 4000 р.</div>
                         <a href="#" class="btn">Подробнее</a>
                         <a href="#" class="btn btn-brown">Забронировать</a>
+                </div>
                 </div>
                 <div class="hotel-rating">
                     <div class="rating-stars">
