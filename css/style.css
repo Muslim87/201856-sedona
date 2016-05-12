@@ -66,6 +66,7 @@ body {
         background: url(../img/index-img/bg.jpg) no-repeat 50% 50%;
         overflow: hidden;
         height: 467px;
+        
     }
         .intro-title {
             background: url(../img/index-img/sedona.png) no-repeat 50% 50%;
@@ -219,6 +220,7 @@ body {
 
 
 .link {
+    display: inline-block;
     color: #cccccc;
     border-bottom: 1px dotted #99cccc;
     text-decoration: none;
@@ -250,9 +252,7 @@ body {
 
 
 
-.hotel-cost {
-    
-}
+
 
 
 
@@ -400,7 +400,7 @@ body {
 }
 
 .sorting-link {
-    display: inline;
+    display: inline-block;
     list-style: none;
     font-size: 13px;
 }
@@ -434,12 +434,53 @@ body {
     margin-right: 20px;
 }
 
-.hotel-category {
-    
-}
+
 
 .btn-transparent {
+    color: #fff;
     margin-top: 20px;
     padding: 10px 34px;
     border: 1px solid #fff;
+    text-decoration: none;
 }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.button {
+    
+}
+
+
+
+.hotel-category-cost {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.hotel-category {
+    display: inline-block;
+}
+
+.hotel-cost {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
