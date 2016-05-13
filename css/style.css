@@ -65,13 +65,13 @@ body {
     .intro-background {
         background: url(../img/index-img/bg.jpg) no-repeat 50% 50%;
         overflow: hidden;
-        height: 467px;
-        
+        height: 717px;
+        margin-bottom: -265px;
     }
         .intro-title {
             background: url(../img/index-img/sedona.png) no-repeat 50% 50%;
             font-size: 0;
-            margin: 60px auto 0;
+            margin: 105px auto 0;
             height: 350px;
             width: 500px;
         }
@@ -107,11 +107,14 @@ body {
     text-align: center;
     font-size: 14px;
     text-transform: uppercase;
-    padding: 40px 0;
+    margin: 60px 0;
+    height: 216px;
+    background: #fff;
 }
 
 .index-title {
     font-size: ;
+    padding-top: 60px;
 }
 
 .reason-town {
@@ -154,9 +157,10 @@ body {
 }
 
 .record {
-    padding: 0px 120px 120px;
+    padding: 58px 0 55px;
     font-size: 16px;
     text-align: center;
+    text-transform: uppercase;
     background: #fff;
 }
 
@@ -259,7 +263,8 @@ body {
 
 
 .rating-value {
-    padding: 5px 20px;
+    padding: 5px 20px ;
+    margin: 0 0 0 0;
     width: 110px;
     background: #cccccc;
 }
@@ -324,6 +329,7 @@ body {
     float: left;
     margin: 50px 50px 55px 130px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .social-btn-twitter {
@@ -382,9 +388,7 @@ body {
 
 
 
-.hotel-card {
-    
-}
+
 
 
 
@@ -422,11 +426,11 @@ body {
 .hotel-rating {
     float: right;
     margin-top: -50px;
-    margin-right: 75px;
+    margin-right: 65px;
 }
 
 .hotel-description {
-    
+    margin: 10px 0 30px;
 }
 
 .hotel-description-image {
@@ -484,3 +488,48 @@ body {
 
 
 
+
+.reasons-five {
+    font-size: 19px;
+    margin-top: 40px;
+}
+
+.sorting-arrow {
+    color: #ccc;
+}
+
+
+
+
+
+.rating-star {
+    color: #81b3d2;
+}
+
+
+
+
+
+
+
+
+
+
+
+.rating-stars {
+    float: right;
+    margin-top: -100px;
+    margin-right: 65px;
+}
+
+
+
+.sorting-arrow-down {
+    color: #81b3d2;
+}
+
+.sortings-arrow {
+    float: right;
+    margin-top: 40px;
+    margin-right: 65px;
+}
