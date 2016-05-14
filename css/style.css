@@ -1,12 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700,400&subset=latin,cyrillic);
+
 body {
 
     background: #fafafa;
     color: #000;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: 'PT+Sans', sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
-
     /*
         serif - с засечками
         sans-serif - без засечек
@@ -23,7 +24,7 @@ body {
 }
 
     .main-header {
-        height: 50px;
+        height: 55px;
     }
         .nav {
             font-size: 0;
@@ -51,14 +52,14 @@ body {
 
         .logo {
             position: absolute;
-            left: 50%;
+            left: 49%;
             top: 0;
             /*
             transform: translate(-50%, 0);
             */
             margin: 0 0 0 -55px;
-            height: 60px;
-            width: 110px;
+            height: 70px;
+            width: 138px;
             z-index: 1;
         }
 
@@ -71,7 +72,7 @@ body {
         .intro-title {
             background: url(../img/index-img/sedona.png) no-repeat 50% 50%;
             font-size: 0;
-            margin: 105px auto 0;
+            margin: 110px auto 0;
             height: 350px;
             width: 500px;
         }
@@ -105,19 +106,20 @@ body {
 
 .index-header {
     text-align: center;
-    font-size: 14px;
+    font-size: ;
     text-transform: uppercase;
-    margin: 60px 0;
+    margin-top: 65px;
     height: 216px;
     background: #fff;
 }
 
 .index-title {
-    font-size: ;
+    font-size: 19px;
     padding-top: 60px;
 }
 
 .reason-town {
+    padding-bottom: 48px;
     color: #fff;
     font-size: ;
     background: #81b3d2;
@@ -177,9 +179,7 @@ body {
     z-index: 1;
 }
 
-.image-map {
-    
-}
+
 
 .questionnaire {
     padding: 40px;
@@ -228,6 +228,7 @@ body {
     color: #cccccc;
     border-bottom: 1px dotted #99cccc;
     text-decoration: none;
+    font-size: 14px;
 }
 
 
@@ -246,12 +247,21 @@ body {
     padding: 5px 15px;
     background: #99cccc;
     color: #fff;
+    font-size: 14px;
     text-decoration: none;
+}
+
+.btn:hover {
+    background: #669ec0;
 }
 
 .btn-brown {
     margin-right: 5px;
-    background: #666666;
+    background: #766357;
+}
+
+.btn-brown:hover {
+    background: #604e43;
 }
 
 
@@ -263,10 +273,12 @@ body {
 
 
 .rating-value {
-    padding: 5px 20px ;
-    margin: 0 0 0 0;
+    padding: 5px 5px;
+    margin: 0;
     width: 110px;
     background: #cccccc;
+    font-size: 14px;
+    text-align: center;
 }
 
 .reason-area {
@@ -314,7 +326,8 @@ body {
     list-style: none;
     margin-top: 25px;
     margin-bottom: 36px;
-    margin-left: 230px;
+    margin-left: 200px;
+    margin-right: 170px;
     padding: 0;
 }
 
@@ -325,11 +338,14 @@ body {
     background: #81b3d2;
 }
 
+
+
 .footer-hashtag {
     float: left;
     margin: 50px 50px 55px 130px;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .social-btn-twitter {
@@ -354,7 +370,6 @@ body {
 
 .footer-copyright {
     margin-top: 20px;
-    margin-left: 150px;
     text-transform: uppercase;
 }
 
@@ -381,7 +396,7 @@ body {
 
 .cost-day {
     float: right;
-    margin: 50px 230px 0 0;
+    margin: 50px 210px 0 0;
 }
 
 
@@ -399,20 +414,25 @@ body {
 
 .sorting {
     float: left;
-    margin: 25px 50px 0 0;
+    width: 100px;
+    margin: 45px 50px 0 0;
     font-weight: normal;
+    font-size: 14px;
 }
 
 .sorting-link {
     display: inline-block;
     list-style: none;
-    font-size: 13px;
+    font-size: ;
 }
 
 .found {
     float: left;
+    width: 150px;
+    margin-top: 40px;
     margin-right: 50px;
-    font-size: 26px;
+    font-size: 22px;
+    vertical-align: middle;
 }
 
 .image-card {
@@ -425,7 +445,7 @@ body {
 
 .hotel-rating {
     float: right;
-    margin-top: -50px;
+    margin-top: -20px;
     margin-right: 65px;
 }
 
@@ -443,9 +463,15 @@ body {
 .btn-transparent {
     color: #fff;
     margin-top: 20px;
-    padding: 10px 34px;
+    padding: 5px 20px;
     border: 1px solid #fff;
     text-decoration: none;
+    border-radius: 2px;
+}
+
+.btn-transparent:hover {
+    background: #fff;
+    color: #000;
 }
 
 .clearfix:before,
@@ -467,6 +493,7 @@ body {
 .hotel-category-cost {
     margin-top: -10px;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 
 .hotel-category {
@@ -490,12 +517,16 @@ body {
 
 
 .reasons-five {
-    font-size: 19px;
+    font-size: 14px;
     margin-top: 40px;
 }
 
 .sorting-arrow {
     color: #ccc;
+}
+
+.sorting-arrow:hover {
+    color: #000;
 }
 
 
@@ -518,18 +549,68 @@ body {
 
 .rating-stars {
     float: right;
-    margin-top: -100px;
+    margin-top: -90px;
     margin-right: 65px;
 }
 
 
 
 .sorting-arrow-down {
-    color: #81b3d2;
+    color: #ccc;
+}
+
+.sorting-arrow-down:hover {
+    color: #000;
 }
 
 .sortings-arrow {
     float: right;
     margin-top: 40px;
     margin-right: 65px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navigation:active {
+    color: #766357;
+}
+
+.navigation:hover {
+    color: #81b3d2;
+}
+
+.price {
+    color: #81b3d2;
+    border: 0px dotted;
+}
+
+
+
+
+
+.spa {
+    margin-left: 33px;
+}
+
+.inn {
+    margin-left: 58px;
+}
+
+.diablo {
+    margin-left: 13px;
+}
+
+.hotel-title {
+    width: 240px;
+}
+
+.hotel-title:hover {
+    color: #81b3d2;
+}
+
+.hotel-card {
+    margin-left: 170px;
 }
