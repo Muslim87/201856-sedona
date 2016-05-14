@@ -1,25 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:700,400&subset=latin,cyrillic);
-
 body {
-
     background: #fafafa;
     color: #000;
-    font-family: 'PT+Sans', sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
-    /*
-        serif - с засечками
-        sans-serif - без засечек
-        monospace - моноширинный
-    */
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
     background: #fff;
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
     margin: 0 auto;
-    /*max-width: 1200px;*/
-    /*min-width: 768px;*/
     width: 1200px;
 }
 
@@ -50,6 +44,26 @@ body {
                 text-decoration: none;
             }
 
+            .nav a:hover {
+                color: #81b3d2;
+            }
+
+            .nav a:active {
+                color: #000;
+                opacity: 0.3;
+            }
+
+            .nav .active {
+                color: #766357;
+            }
+            .nav .active:hover {
+                color: #604e43;
+            }
+            .nav .active:active {
+                color: #766357;
+                opacity: 0.3;
+            }
+
         .logo {
             position: absolute;
             left: 49%;
@@ -64,91 +78,128 @@ body {
         }
 
     .intro-background {
-        background: url(../img/index-img/bg.jpg) no-repeat 50% 50%;
+        background: url(../img/index-img/bg.jpg) no-repeat 50% -54px;
         overflow: hidden;
-        height: 717px;
-        margin-bottom: -265px;
+        position: relative;
+        height: 510px;
     }
         .intro-title {
-            background: url(../img/index-img/sedona.png) no-repeat 50% 50%;
+            background: url(../img/index-img/sedona.png) no-repeat 0 0;
             font-size: 0;
-            margin: 110px auto 0;
-            height: 350px;
-            width: 500px;
-        }
-        
-        .angles {
-            background: url(../img/index-img/angles.png) no-repeat 50% 50%;
-            font-size: 10px;
-            margin: 150px auto 0;
+            margin: 76px auto 0;
+            height: 352px;
+            width: 458px;
         }
 
+        .intro-background::after {
+            background: url(../img/index-img/angles.png) no-repeat 50% 100%;
+            display: block;
+            content: '';
+            height: 57px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+    .index-header {
+        margin: 60px auto 50px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+        .index-header-title {
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 26px;
+            margin: 0 0 27px;
+        }
+
+        .index-header p {
+            font-size: 14px;
+            line-height: 26px;
+            margin: 0;
+        }
 
 .reasons {
     font-size: 0;
 }
-.reason {
-    background: #fff;
-    font-size: 14px;
-    display: inline-block;
-    vertical-align: top;
-    width: 33.33%;
-    padding: 49px 20px;
-    text-align: center;
-    box-sizing: border-box;
-    text-transform: uppercase;
-}
-.reason-image {
-    display: inline-block;
-    vertical-align: top;
-    width: 66.67%;
-}
 
-.index-header {
-    text-align: center;
-    font-size: ;
-    text-transform: uppercase;
-    margin-top: 65px;
-    height: 216px;
-    background: #fff;
-}
-
-.index-title {
-    font-size: 19px;
-    padding-top: 60px;
-}
-
-.reason-town {
-    padding-bottom: 48px;
-    color: #fff;
-    font-size: ;
+.reasons-withImage {
     background: #81b3d2;
+    position: relative;
+    min-height: 256px;
+    overflow: hidden;
 }
 
-.reason-apartment {
-    font-size: ;
-    background: url(../img/index-img/housing.png) no-repeat 50% 20%;
+.reasons-gray {
+    background: #eee;
 }
+    .reason {
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: top;
+        width: 33.33%;
+        padding: 54px 20px;
+        text-align: center;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
 
-.reason-food {
-    font-size: 13px;
-    background: url(../img/index-img/food.png) no-repeat 50% 20%;
-}
+    .reasons-withImage .reason {
+        color: #fff;
+    }
+        .reason-title {
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 21px;
+            margin: 0;
+        }
 
-.reason-souvenirs {
-    font-size: 13px;
-    background: url(../img/index-img/souvenir.png) no-repeat 50% 20%;
-}
+        .reason-text {
+            font-size: 14px;
+            line-height: 21px;
+            margin: 18px 0 0;
+        }
 
-.image-apartment {
-    background: url(../img/index-img/housing.png) no-repeat 50% 50%;
-    
-}
+    .reason-image {
+        display: inline-block;
+        vertical-align: top;
+        width: 66.67%;
+    }
+        .reason-image img {
+            max-width: 100%;
+        }
 
+    /*.reason-image-town {
+        background: url(../img/index-img/town.jpg) no-repeat 50% 0;
+        background-size: cover;
+        right: 0;
+    }*/
 
+    .reason-withIcon {
+        position: relative;
+    }
+        .reason-withIcon::before {
+            content: '';
+            display: block;
+            margin: 0 auto 30px;
+            height: 76px;
+            width: 75px;
+        }
 
+        .reason-apartment::before {
+            background: url(../img/index-img/housing.png) no-repeat 50% 50%;
+        }
 
+        .reason-food::before {
+            background: url(../img/index-img/food.png) no-repeat 50% 20%;
+        }
 
+        .reason-souvenirs::before {
+            background: url(../img/index-img/souvenir.png) no-repeat 50% 20%;
+        }
 
 
 .brige {
@@ -178,6 +229,73 @@ body {
     background: #666666;
     z-index: 1;
 }
+
+
+.search {
+    margin: 0 auto;
+    position: relative;
+    width: 568px;
+}
+
+    .search-button {
+        background: #766357;
+        color: #fff;
+        font-size: 21px;
+        font-weight: bold;
+        display: block;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 86px;
+        height: 86px;
+    }
+
+    .search-form {
+        background: #fff;
+        position: absolute;
+        top: 86px;
+        left: 0;
+        right: 0;
+        padding: 56px;
+    }
+        .search-form-group {
+            font-size: 0;
+            border: 0;
+            padding: 0;
+            margin: 0 0 30px;
+        }
+
+        .search-form label {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 38px;
+            text-transform: uppercase;
+            width: 115px;
+        }
+
+        .search-form-input {
+            box-sizing: border-box;
+            border: 2px solid #f2f2f2;
+            background: #f2f2f2;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 0 16px;
+            text-transform: uppercase;
+            outline: 0;
+            height: 38px;
+            width: 326px;
+        }
+        .search-form-input:hover {
+            background: #ebebeb;
+            border-color: #ebebeb;
+        }
+        .search-form-input:focus {
+            border-color: #e5e5e5;
+            background: #fff;
+        }
+
+
 
 
 
@@ -243,7 +361,7 @@ body {
 
 
 .btn {
-    
+
     padding: 5px 15px;
     background: #99cccc;
     color: #fff;
@@ -281,18 +399,6 @@ body {
     text-align: center;
 }
 
-.reason-area {
-    background: #eeeeee;
-}
-
-.reason-road {
-    background: #eeeeee;
-}
-
-.reason-tourists {
-    background: #eeeeee;
-}
-
 .selection {
     background: url(../img/catalog-img/bg.jpg) no-repeat 50% 50%;
     overflow: hidden;
@@ -301,11 +407,6 @@ body {
     text-transform: uppercase;
 }
 
-
-
-.reason-title {
-    padding-top: 70px;
-}
 
 .reason-bridge {
     color: #fff;
@@ -485,7 +586,7 @@ body {
 }
 
 .button {
-    
+
 }
 
 
@@ -574,13 +675,7 @@ a {
 }
 
 
-.navigation:active {
-    color: #766357;
-}
 
-.navigation:hover {
-    color: #81b3d2;
-}
 
 .price {
     color: #81b3d2;
