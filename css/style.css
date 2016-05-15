@@ -133,15 +133,20 @@ body {
     overflow: hidden;
 }
 
+.bridge {
+    margin-top: 30px;
+}
+
 .reasons-gray {
     background: #eee;
+    padding-bottom: 7px;
 }
     .reason {
         font-size: 14px;
         display: inline-block;
         vertical-align: top;
         width: 33.33%;
-        padding: 54px 20px;
+        padding: 54px 20px 50px;
         text-align: center;
         box-sizing: border-box;
         text-transform: uppercase;
@@ -160,7 +165,29 @@ body {
         .reason-text {
             font-size: 14px;
             line-height: 21px;
-            margin: 18px 0 0;
+            margin: 21px 0 0;
+        }
+
+        .number {
+            margin-top: 24px;
+        }
+
+        .number-three {
+            margin-top: 19px
+        }
+            
+        .number-four {
+            margin-top: 19px
+        }
+
+        .number-five {
+            margin-top: 19px
+        }
+
+
+
+        .paragraph {
+            margin-top: 17px;
         }
 
     .reason-image {
@@ -212,7 +239,7 @@ body {
 }
 
 .record {
-    padding: 30px 0 55px;
+    padding: 25px 0 55px;
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
@@ -234,7 +261,7 @@ body {
 
 
 .search {
-    margin: 0 auto;
+    margin: -3px auto 0;
     position: relative;
     width: 568px;
 }
@@ -263,8 +290,8 @@ body {
             display: inline-block;
             font-size: 0;
             border: 0;
-            padding: 0;
-            margin: 0 0 30px;
+            padding: 0 0 3px;
+            margin: 0  0 30px;
         }
 
         .search-form label {
@@ -287,11 +314,11 @@ body {
             text-transform: uppercase;
             outline: 0;
             height: 38px;
-            width: 292px;
+            width: 305px;
             display: inline-block;
         }
 
-        .calendar {
+        .calendar-btn {
             box-sizing: border-box;
             border: 2px solid #f2f2f2;
             background: #f2f2f2;
@@ -302,14 +329,16 @@ body {
             height: 38px;
             width: 34px;
             display: inline-block;
+            vertical-align: top;
+            text-align: center;
         }
 
-        .calendar:hover {
-            background: #ebebeb;
+        .calendar-btn:hover {
+            background-color: #ebebeb;
             border-color: #ebebeb;
         }
 
-        .calendar:focus {
+        .calendar-btn:focus {
             border-color: #e5e5e5;
             background: #fff;
         }
@@ -406,6 +435,11 @@ body {
             width: 34px;
         }
 
+.baby {
+    text-align: center;
+    margin-right: 13px;
+}
+
         .search-form-baby:hover {
             background: #ebebeb;
             border-color: #ebebeb;
@@ -477,13 +511,13 @@ body {
     .social-btn {
         display: inline-block;
         background: #81b3d2;
-        width: 45px;
+        width: 50px;
         height: 50px;
         margin: 0 5px;
     }
      
     .social-btn:hover {
-        background: #669ec0;
+        background-color: #669ec0;
     }
 
     .social-btn-twitter {
@@ -779,7 +813,7 @@ a {
     }
 
     .hotel-card {
-        margin: -10px 0 0 166px;
+        margin: -16px 0 0 166px;
     }
 
     .hotel-title {
@@ -837,7 +871,7 @@ a {
     }
 
     .btn-brown {
-        margin-left: 5px;
+        margin-left: 7px;
         background: #766357;
     }
 
@@ -860,8 +894,8 @@ a {
     .hotel-rating {
         float: right;
         width: 120px;
-        margin-top: -30px;
-        margin-right: 65px;
+        margin-top: -25px;
+        margin-right: 69px;
     }
     
 .rating-value {
