@@ -260,6 +260,7 @@ body {
         padding: 56px;
     }
         .search-form-group {
+            display: inline-block;
             font-size: 0;
             border: 0;
             padding: 0;
@@ -286,13 +287,62 @@ body {
             text-transform: uppercase;
             outline: 0;
             height: 38px;
-            width: 326px;
+            width: 292px;
+            display: inline-block;
         }
+
+        .calendar {
+            box-sizing: border-box;
+            border: 2px solid #f2f2f2;
+            background: #f2f2f2;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 0;
+            text-transform: uppercase;
+            height: 38px;
+            width: 34px;
+            display: inline-block;
+        }
+
+        .calendar:hover {
+            background: #ebebeb;
+            border-color: #ebebeb;
+        }
+
+        .calendar:focus {
+            border-color: #e5e5e5;
+            background: #fff;
+        }
+
         .search-form-input:hover {
             background: #ebebeb;
             border-color: #ebebeb;
         }
+
         .search-form-input:focus {
+            border-color: #e5e5e5;
+            background: #fff;
+        }
+
+        .search-form-minus {
+            box-sizing: border-box;
+            border: 2px solid #f2f2f2;
+            background: #f2f2f2;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 0;
+            text-transform: uppercase;
+            outline: 0;
+            height: 38px;
+            width: 34px;
+        }
+  
+        .search-form-minus:hover {
+            background: #ebebeb;
+            border-color: #ebebeb;
+        }
+
+        .search-form-minus:focus {
             border-color: #e5e5e5;
             background: #fff;
         }
@@ -303,11 +353,11 @@ body {
             background: #f2f2f2;
             font-size: 14px;
             font-weight: bold;
-            padding: 0;
+            padding: 0 10px;
             text-transform: uppercase;
             outline: 0;
             height: 38px;
-            width: 114px;
+            width: 34px;
         }
 
         .search-form-adult:hover {
@@ -319,6 +369,29 @@ body {
             border-color: #e5e5e5;
             background: #fff;
         }
+
+        .search-form-plus {
+            box-sizing: border-box;
+            border: 2px solid #f2f2f2;
+            background: #f2f2f2;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 0;
+            text-transform: uppercase;
+            outline: 0;
+            height: 38px;
+            width: 34px;
+        }
+
+        .search-form-plus:hover {
+            background: #ebebeb;
+            border-color: #ebebeb;
+        }
+
+        .search-form-plus:focus {
+            border-color: #e5e5e5;
+            background: #fff;
+        }
         
         .search-form-baby {
             box-sizing: border-box;
@@ -326,12 +399,11 @@ body {
             background: #f2f2f2;
             font-size: 14px;
             font-weight: bold;
-            padding: 0;
-            margin-left: -50px;
+            padding: 0 10px;
             text-transform: uppercase;
             outline: 0;
             height: 38px;
-            width: 114px;
+            width: 34px;
         }
 
         .search-form-baby:hover {
@@ -344,9 +416,6 @@ body {
             background: #fff;
         }
 
-        .baby {
-            margin: -68px 0 0 260px;
-        }
 
 .questionnaire {
     padding: 40px;
@@ -358,7 +427,7 @@ body {
 
 .btn-search {
     padding: 15px 0;
-    margin-top: 55px;
+    margin-top: 0;
     width: 457px;
     color: #fff;
     font-size: 21px;
@@ -375,38 +444,42 @@ body {
 }
 
 .main-footer {
-    height: 120px;
+    height: 85px;
     font-size: 0;
     text-align: center;
-    opacity: 0.7;
+    background: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
+    padding: 35px 0 0;
+    margin-top: -120px;
+    position: relative;
 }
 
     .footer-hashtag {
-        float: left;
-        width: 150px;
-        margin: 50px 0 53px 135px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
         font-size: 21px;
-        height: 120px;
         line-height: 26px;
         font-weight: bold;
-        opacity: 1;
+        width: 33.33%;
     }
 
     .footer-social-list {
         display: inline-block;
+        vertical-align: middle;
         text-align: center;
-        margin: 35px 0 35px -100px;
         list-style: none;
+        width: 33.33%;
+        margin: 0;
+        padding: 0;
     }
  
     .social-btn {
         display: inline-block;
-        vertical-align: middle;
         background: #81b3d2;
         width: 45px;
         height: 50px;
-        margin: 0 5px 0 5px;
+        margin: 0 5px;
     }
      
     .social-btn:hover {
@@ -426,12 +499,13 @@ body {
     }
 
 .footer-copyright {
-    float: right;
-    vertical-align: top;
-    width: 120px;
-    margin: 43px 102px 40px 0;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 33.33%;
+    font-size: 14px;
+    line-height: 26px;
 }
-
 
 
 .selection {
@@ -444,7 +518,7 @@ body {
 
     .infrastructure {
         float: left;
-        margin: 50px 0;
+        margin: 28px 0;
         margin-left: 75px;
     }
 
@@ -454,7 +528,7 @@ body {
     
     .housing {
         float: left;
-        margin: 50px 0 0 115px;
+        margin: 28px 0 0 115px;
     }
 
     .cost-day {
@@ -462,20 +536,131 @@ body {
         margin: 50px 210px 0 0;
     }
 
+.filter-range {
+    width: 330px;
+    margin: 28px auto;
+    margin-right: 65px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+    .filter-range-title {
+        margin-bottom: 9px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .price-controls {
+        position: relative;  
+        height: 36px;
+        margin-bottom: 20px;
+        font-size: 0;
+        border: 2px solid #ffffff;
+        border-radius: 2px;
+}
+
+    .price-controls::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2px;
+        height: 22px;
+        background: #ffffff;
+        transform: translate(-50%, -50%);
+    }
+
+    .price-controls label {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 38px;
+        vertical-align: top;
+        cursor: pointer;
+    }
+
+    .price-controls .min-price,
+    .price-controls .max-price {
+        width: 90px;
+        padding-left: 65px;
+    }
+
+    .price-controls input {
+        width: 50px;
+        margin: 0;
+        color: inherit;
+        font: inherit;
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    .range-controls {
+        position: relative;
+        margin-bottom: 32px;
+    }
+
+    .range-controls .scale {
+        height: 2px;
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .range-controls .bar {
+        width: 80%;
+        height: 2px;
+        background: #ffffff;
+    }
+
+    .range-toggle {
+        position: absolute;
+        top: -9px;
+        width: 4px;
+        height: 4px;
+        background: #ababab;
+        border: 8px solid #ffffff;
+        border-radius: 50%;
+        box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+        cursor: pointer;
+    }
+
+    .range-toggle:hover {
+        background: #1c4f80;
+    }
+
+    .range-toggle-min {
+        left: 0;
+    }
+
+    .range-toggle-max {
+        left: 80%;
+    }
+
 .btn-transparent {
-    color: #fff;
-    margin-top: 20px;
-    padding: 5px 20px;
-    border: 1px solid #fff;
-    text-decoration: none;
-    border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
 }
 
 .btn-transparent:hover {
-    background: #fff;
-    color: #000;
+  color: #000000;
+
+  background: #ffffff;
 }
 
+.header-counter {
+    margin-bottom: 120px;
+}
 
 .breadcrumbs {
     display: inline-block;

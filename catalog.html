@@ -44,14 +44,24 @@
                 <input class="checkbox" type="checkbox" checked id="motel-field"> <label for="motel-field">Мотель</label><br>
                 <input class="checkbox" type="checkbox" checked id="apartment-field"> <label for="apartment-field">Апартаменты</label>
             </div>
-            <div class="cost-day">
-                <label>Стоимость в сутки (Р):</label><br>
-                <input type="text" value="От: 0 До: 3000"><br>
-                <input type="range"><br>
-                <a href="#" class="btn-transparent">Показать</a>
+            <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                    <div class="price-controls">
+                        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                    </div>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                <button class="btn-transparent" type="submit">Показать</button>
             </div>
         </div>
             </div>
+    <div class="header-counter">
         <div class="breadcrumbs">
             <h2 class="found">Найдено: 3</h2>
             <b class="sorting">сортировка:</b>
@@ -149,6 +159,7 @@
             </div>
             <hr color="#ccc" size="1">
         </div>
+    </div>
         <footer class="main-footer">
                 <div class="footer-hashtag">#visitsedona</div>
                 <ul class="footer-social-list">

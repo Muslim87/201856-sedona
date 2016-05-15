@@ -7,10 +7,6 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <!--
-            4. Продолжить писать css в заданном стиле
-            5. Избавиться от всех position relative/absolute которые не нужны (в футере, для reason)
-        -->
         <div class="wrapper">
             <header class="main-header">
                 <nav class="header-nav">
@@ -108,20 +104,29 @@
                     <form class="search-form">
                         <fieldset class="search-form-group">
                             <label for="arrival date-field">Дата заезда:</label>
-                            <input class="search-form-input" type="date" name="date" id="arrival date-field">
+                            <input class="search-form-input" type="text" name="date" value="24 Апреля 2016" id="arrival date-field">
+                            <input class="calendar" type="date" name="calendar">
                         </fieldset>
                         <fieldset class="search-form-group">
                             <label for="arrival date-field">Дата выезда:</label>
-                            <input class="search-form-input" type="date" name="date" id="arrival date-field">
+                            <input class="search-form-input" type="text" name="date" value="4 июля 2016" id="arrival date-field">
+                            <input class="calendar" type="date" name="calendar">
                         </fieldset>
-                        <fieldset class="search-form-group">
-                            <label for="adult number-field">Взрослые:</label> 
-                            <input class="search-form-adult" type="number" name="" id="adult number-field">
+                        <div class="">
+                        <fieldset class="search-form-group adult">
+                            <label for="adult number-field">Взрослые:</label>
+                            <input class="search-form-minus" type="button" value="-">
+                            <input class="search-form-adult" type="text" name="number" id="adult number-field" value="2">
+                            <input class="search-form-plus" type="button" value="+">
                         </fieldset>
+                        
                         <fieldset class="search-form-group baby">
-                            <label for="baby number-field">Дети:</label> 
-                            <input class="search-form-baby" type="number" name="" id="baby number-field">
+                            <label for="baby number-field">Дети:</label>
+                            <input class="search-form-minus" type="button" value="-"> 
+                            <input class="search-form-baby" type="text" name="number" id="baby number-field" value="0">
+                            <input class="search-form-plus" type="button" value="+">
                         </fieldset>
+                        </div>
                         <input type="submit" class="btn-search" value="Найти">
                     </form>
                 </article>
@@ -143,12 +148,10 @@
                     </li>
                 </ul>
                  <div class="footer-copyright">
-                    <b>Website by</b>
-                    <div class="htmlacademy">
+                    <b class="website">Website by</b>
                     <a href="http://htmlacademy.ru">
                         <img src="img/html-academy.png" class="htmlacademy">
                     </a>
-                    </div>
                 </div>
             </footer>
         </div>
