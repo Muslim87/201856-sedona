@@ -71,7 +71,7 @@
                     </div>
                 </div>
 
-                <div class="reasons reasons-withImage">
+                <div class="reasons reasons-withImage bridge">
                     <div class="reason-image reason-image-bridge">
                         <img src="img/index-img/bridge-devil.jpg" alt="" width="800" height="256">
                     </div>
@@ -101,7 +101,7 @@
                 </div>
                 <div class="record">
                    <h2 class="question">Заинтересовались?</h2>
-                   <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                   <p class="reason-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 </div>
                 <article class="search">
                     <a href="#" class="search-button">Поиск гостиницы в Седоне</a>
@@ -110,9 +110,18 @@
                             <label for="arrival date-field">Дата заезда:</label>
                             <input class="search-form-input" type="date" name="date" id="arrival date-field">
                         </fieldset>
-                        <label for="date of departure-field">Дата выезда:</label> <input type="date" name="date" id="date of departurefield"><br>
-                        <label for="adult number-field">Взрослые:</label> <input type="number" name="" id="adult number-field">
-                        <label for="baby number-field">Дети:</label> <input type="number" name="" id="baby number-field"><br>
+                        <fieldset class="search-form-group">
+                            <label for="arrival date-field">Дата выезда:</label>
+                            <input class="search-form-input" type="date" name="date" id="arrival date-field">
+                        </fieldset>
+                        <fieldset class="search-form-group">
+                            <label for="adult number-field">Взрослые:</label> 
+                            <input class="search-form-adult" type="number" name="" id="adult number-field">
+                        </fieldset>
+                        <fieldset class="search-form-group baby">
+                            <label for="baby number-field">Дети:</label> 
+                            <input class="search-form-baby" type="number" name="" id="baby number-field">
+                        </fieldset>
                         <input type="submit" class="btn-search" value="Найти">
                     </form>
                 </article>
@@ -135,9 +144,11 @@
                 </ul>
                  <div class="footer-copyright">
                     <b>Website by</b>
+                    <div class="htmlacademy">
                     <a href="http://htmlacademy.ru">
                         <img src="img/html-academy.png" class="htmlacademy">
                     </a>
+                    </div>
                 </div>
             </footer>
         </div>
