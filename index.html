@@ -44,7 +44,9 @@
                 <div class="reasons reasons-withImage">
                     <div class="reason">
                         <h2 class="reason-title">Настоящий<br> городок</h2>
+                        
                         <div class="reason-text number">&mdash; №1 &mdash;</div>
+                        
                         <p class="reason-text">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов,<br> там течет своя жизнь.</p>
                     </div>
                     <div class="reason-image">
@@ -73,7 +75,9 @@
                     </div>
                     <div class="reason">
                         <h2 class="reason-title">Там есть<br> мост Дьявола</h2>
+                        
                         <div class="reason-text number">&mdash; №2 &mdash;</div>
+                        
                         <p class="reason-text">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
                     </div>
                 </div>
@@ -81,17 +85,23 @@
                 <div  class="reasons reasons-gray">
                     <div class="reason">
                        <h2 class="reason-title">Небольшая<br> площадь</h2>
+                       
                        <div class="reason-text number-three">&mdash; №3 &mdash;</div>
+                       
                        <p class="reason-text">Все достопримечательности<br> находятся очень близко</p>
                     </div>
                     <div class="reason">
                        <h2 class="reason-title">Красивая<br> дорога</h2>
+                       
                        <div class="reason-text number-four">&mdash; №4 &mdash;</div>
+                       
                        <p class="reason-text">Ехать в Седону из Лас-Весегаса совсем<br> не скучно</p>
                     </div>
                     <div class="reason">
                        <h2 class="reason-title">Мало<br> туристов</h2>
+                       
                        <div class="reason-text number-five">&mdash; №5 &mdash;</div>
+                       
                        <p class="reason-text">Большинство едет в Гранд-Каньон и<br> толпится там</p>
                     </div>
                 </div>
@@ -101,36 +111,34 @@
                 </div>
                 <article class="search">
                     <a href="#" class="search-button">Поиск гостиницы в Седоне</a>
-                    <form class="search-form">
-                        <fieldset class="search-form-group">
-                            <label for="arrival date-field">Дата заезда:</label>
-                            <input class="search-form-input" type="text" name="date" value="24 Апреля 2016" id="arrival date-field">
-                            <button class="calendar-btn" type="button">
-                                <img src="img/index-img/calendar.png">
-                            </button>
-                        </fieldset>
-                        <fieldset class="search-form-group">
-                            <label for="arrival date-field">Дата выезда:</label>
-                            <input class="search-form-input" type="text" name="date" value="4 июля 2016" id="arrival date-field">
-                            <button class="calendar-btn" type="button">
-                                <img src="img/index-img/calendar.png">
-                            </button>
-                        </fieldset>
-                        <div class="">
-                        <fieldset class="search-form-group adult">
+                        <form class="search-form">
+                            <fieldset class="search-form-group arrival-date">
+                                <label for="arrival date-field">Дата заезда:</label>
+                                <input class="search-form-input" type="text" name="date" value="24 Апреля 2016" id="arrival date-field">
+                                <button class="calendar-btn" type="button">
+                                    <img src="img/index-img/calendar.png">
+                                </button>
+                            </fieldset>
+                            <fieldset class="search-form-group date-of-departure">
+                                <label for="arrival date-field">Дата выезда:</label>
+                                <input class="search-form-input" type="text" name="date" value="4 июля 2016" id="arrival date-field">
+                                <button class="calendar-btn" type="button">
+                                    <img src="img/index-img/calendar.png">
+                                </button>
+                            </fieldset>
+                        <fieldset class="search-form-group group-adult">
                             <label for="adult number-field">Взрослые:</label>
                             <input class="search-form-minus" type="button" value="-">
                             <input class="search-form-adult" type="text" name="number" id="adult number-field" value="2">
                             <input class="search-form-plus" type="button" value="+">
                         </fieldset>
                         
-                        <fieldset class="search-form-group">
+                        <fieldset class="search-form-group group-baby">
                             <label class="baby" for="baby number-field">Дети:</label>
                             <input class="search-form-minus" type="button" value="-"> 
                             <input class="search-form-baby" type="text" name="number" id="baby number-field" value="0">
                             <input class="search-form-plus" type="button" value="+">
                         </fieldset>
-                        </div>
                         <input type="submit" class="btn-search" value="Найти">
                     </form>
                 </article>
@@ -141,13 +149,13 @@
             <footer class="main-footer">
                 <div class="footer-hashtag">#visitsedona</div>
                 <ul class="footer-social-list">
-                    <li class="social-btn">
+                    <li class="social-btn social-btn-left">
                         <a href="#" class="social-btn social-btn-twitter"></a>
                     </li>
-                    <li class="social-btn">
+                    <li class="social-btn social-btn-center">
                         <a href="#" class="social-btn social-btn-fb"></a>
                     </li>
-                    <li class="social-btn">
+                    <li class="social-btn social-btn-right">
                         <a href="#" class="social-btn social-btn-youtube"></a>
                     </li>
                 </ul>
