@@ -128,7 +128,8 @@ a {
             font-size: 21px;
             font-weight: bold;
             line-height: 26px;
-            margin: 0 0 27px;
+            max-width: 450px;
+            margin: 0 auto 27px;
         }
 
         .index-header p {
@@ -174,13 +175,15 @@ a {
             font-size: 21px;
             font-weight: bold;
             line-height: 21px;
-            margin: 0;
+            width: 151px;
+            margin: 0 auto;
         }
 
         .reason-text {
             font-size: 14px;
             line-height: 21px;
-            margin: 22px 0 0;
+            width: 305px;
+            margin: 22px auto 0;
         }
 
         .number {
@@ -194,6 +197,13 @@ a {
         .number-four {
             margin-top: 24px
         }
+
+.road-reason-text {
+    font-size: 14px;
+    line-height: 21px;
+    width: 290px;
+    margin: 22px auto 0;
+}
 
         .number-five {
             margin-top: 24px
@@ -257,6 +267,14 @@ a {
 
 .question {
     font-size: 30px;
+    width: 300px;
+    margin: 22px auto 0;
+}
+
+.record-reason-text {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 30px auto 0;
 }
 
 .search-header {
@@ -505,6 +523,11 @@ a {
     background: #669ec0;
 }
 
+.btn-search:active {
+    color: #88b6d1;
+    background-color: #5496bd;
+}
+
 .main-footer {
     height: 88px;
     font-size: 0;
@@ -548,11 +571,19 @@ a {
         background-color: #669ec0;
     }
 
+    .social-btn:active {
+        background-color: #5496bd;
+    }
+
     .social-btn-twitter {
         margin: 0;
         padding: 0;
         background: url(../img/twitter.svg) no-repeat 50% 50%;
     }
+
+.social-btn-twitter:active {
+    background: url(../img/twitter-down.svg.png) no-repeat 50% 50%;
+}
 
         .social-btn-left {
             margin-left: 5px;
@@ -564,6 +595,10 @@ a {
         background: url(../img/facebook.svg) no-repeat 50% 50%;
     }
 
+.social-btn-fb:active {
+    background: url(../img/facebook-down.svg.png) no-repeat 50% 50%;
+}
+
         .social-btn-center {
             margin: 0 0 0 2px;
         }
@@ -573,6 +608,10 @@ a {
         padding: 0;
         background: url(../img/youtube.png) no-repeat 50% 50%;
     }
+
+.social-btn-youtube:active {
+    background: url(../img/youtube-down.png) no-repeat 50% 50%;
+}
 
         .social-btn-right {
             margin-left: 6px;
@@ -619,6 +658,10 @@ a {
     overflow: hidden;
     padding: 28px 0;
     text-transform: uppercase;
+}
+
+.selection label {
+    display: block;
 }
 
     .infrastructure {
@@ -830,6 +873,15 @@ a {
         margin-left: 29px;
     }
 
+.rating:hover {
+    color: #81b3d2;
+}
+
+.rating:active {
+    color: #222;
+    border: none;
+}
+
 .sortings-arrow {
     float: right;
     margin-top: 40px;
@@ -844,6 +896,10 @@ a {
         color: #000;
     }
 
+.sorting-arrow:active {
+    color: #81b3d2;
+}
+
     .sorting-arrow-down {
         color: #ccc;
     }
@@ -851,6 +907,10 @@ a {
     .sorting-arrow-down:hover {
         color: #000;
     }
+
+.sorting-arrow-down:active {
+    color: #81b3d2;
+}
 
 
 .hotel {
@@ -896,6 +956,10 @@ a {
                 color: #81b3d2;
             }
 
+.hotel-title:active {
+    color: #b2b2b2;
+}
+
             .hotel-category-cost {
                 margin-top: 7px;
                 margin-bottom: 15px;
@@ -904,12 +968,14 @@ a {
 
         .hotel-category {
             display: inline-block;
+            vertical-align: top;
             font-size: 14px;
             line-height: 21px;
         }
 
         .hotel-cost {
             display: inline-block;
+            vertical-align: top;
             font-size: 14px;
             line-height: 21px;
         }
@@ -940,6 +1006,11 @@ a {
         background: #669ec0;
     }
 
+.btn:active {
+    color: #88b6d1;
+    background-color: #5496bd;
+}
+
     .btn-brown {
         margin-left: 7px;
         background: #766357;
@@ -948,6 +1019,11 @@ a {
     .btn-brown:hover {
         background: #604e43;
     }
+
+.btn-brown:active {
+    color: #857871;
+    background-color: #503e33;
+}
 
     .hotel-rating {
         float: right;
